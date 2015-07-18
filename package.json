@@ -6,9 +6,20 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://jayngs@bitbucket.org/jayngs/_mern-stack-boilerplate.git"
+  },
+  "keywords": [
+    "MERN Stack"
+  ],
   "author": "Jason Ng",
   "license": "ISC",
   "devDependencies": {
     "gulp": "^3.9.0"
+  },
+  "dependencies": {
+    "express": "^4.13.1",
+    "react": "^0.13.3"
   }
 }
