@@ -1,0 +1,27 @@
+@import "bootstrap";
+@import "font-awesome";
+
+// VARIABLES
+// Font Stacks
+$heading-font: Helvetica, Arial, sans-serif;
+$body-font: Georgia, serif;
+$fa-font-path:        "../fonts/fontawesome" !default;
+// Colour Palette (https://color.adobe.com/Draw-With-Me-color-theme-647636/)
+$primary-color: #3CBAC8;
+$secondary-green:#93EDD4;
+$highlight-color:#F19181;
+$link-color:blue;
+$grey-color: #32373D;
+$white-color: #ffffff;
+$black-color: #000000;
+$disabled-color:#dddddd;
+
+// CUSTOM STYLES
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+a {
+	 color: #00B7FF;
+	 font-size:19px;
+}
