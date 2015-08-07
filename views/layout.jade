@@ -1,0 +1,58 @@
+doctype html
+html(lang='en')
+	head
+		meta(charset='utf-8')
+		meta(http-equiv='X-UA-Compatible', content='IE=edge')
+		meta(name='viewport', content='width=device-width, initial-scale=1')
+		// The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags
+		title= title
+		// Bootstrap
+		link(rel='stylesheet', href='/stylesheets/style.css')
+		// HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries
+		// WARNING: Respond.js doesn't work if you view the page via file://
+		//if lt IE 9
+		script(src='https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js')
+		script(src='https://oss.maxcdn.com/respond/1.4.2/respond.min.js')
+		// jQuery (necessary for Bootstrap's JavaScript plugins)
+		script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js', defer)
+		// Include all compiled plugins (below), or include individual files as needed
+		script(src='javascripts/bootstrap.min.js' defer)
+		script(src='javascripts/TweenMax.min.js' defer)	
+	body
+		nav(role="navigation").navbar.navbar-inverse.navbar-static-top
+			.container
+				.navbar-header
+					button(type="button", data-toggle="collapse", data-target=".navbar-ex1-collapse").navbar-toggle.collapsed
+						span.sr-only Toggle navigation
+						span.icon-bar
+						span.icon-bar
+						span.icon-bar
+					a(href="#" ).navbar-brand Title
+				.collapse.navbar-collapse.navbar-ex1-collapse
+					ul.nav.navbar-nav 
+						li.active: a(href="/about") About
+						li: a(href="#") Link
+					form(role="search").navbar-form.navbar-left
+						.form-group 
+							input(type="text", placeholder="Search").form-control
+						button(type="submit").btn.btn-default Submit
+					ul.nav.navbar-nav.navbar-right
+						li: a(href="#") Link
+						li.dropdown
+							a.dropdown-toggle(href="#", data-toggle="dropdown",role="button", aria-expanded="false")
+								| Dropdown 
+								span.caret
+							ul.dropdown-menu(role="menu")
+								li: a(href="#") Action
+								li: a(href="#") Another action
+								li: a(href="#") Something else here
+								li: a(href="#") Separated link
+		.jumbotron
+			.container
+				h1 Hello, world!
+				p Contents ...
+				p
+					a(href="#").btn.btn-primary.btn-large Learn more
+		block content
+
+
