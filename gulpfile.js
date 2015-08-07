@@ -8,8 +8,8 @@ var NODE_MODULES = "node_modules/";
 var BOOTSTRAP_SCSS = "node_modules/bootstrap-sass/assets/stylesheets/";
 var EXTERNAL_LIBS = {
     bootstrapjs: "./node_modules/bootstrap-sass/assets/javascripts/bootstrap.min.js",
-    reactjs: "./node_modules/react/dist/react.min.js",
-    jsxtranformer:"./node_modules/react/dist/JSXTransformer.js",
+    // reactjs: "./node_modules/react/dist/react.min.js",
+    // jsxtranformer:"./node_modules/react/dist/JSXTransformer.js",
 };
 
 // grab our gulp packages
@@ -24,7 +24,7 @@ var gulp    = require('gulp'),
 //---------------------------------------------------------------------------------------------------------------------
 
 // create a default task and just log a message
-gulp.task('default', ['styles','fonts', 'copy-bootstrapjs', 'copy-reactjs', 'copy-jsxtransformer', 'copy-gsap']);
+gulp.task('default', ['styles','fonts', 'copy-bootstrapjs', 'copy-gsap']);
 
 // Compile our SCSS file into CSS including importing Font Awesome and Bootstrap files.
 gulp.task('styles', function() {
@@ -43,16 +43,16 @@ gulp.task('copy-bootstrapjs', function() {
   return gulp.src(NODE_MODULES + "bootstrap-sass/assets/javascripts/bootstrap.min.js")
     .pipe(gulp.dest(PUBLIC_JS));
 });
-// Copy the React JS Library into the public/javascripts/ directory
-gulp.task('copy-reactjs', function() {
-  return gulp.src(NODE_MODULES + "react/dist/react.min.js")
-    .pipe(gulp.dest(PUBLIC_JS)); 
-});
-// Copy the React JSXTransformer library into the public/javascripts/ directory
-gulp.task('copy-jsxtransformer', function() {
-  return gulp.src(NODE_MODULES + "react/dist/JSXTransformer.js")
-    .pipe(gulp.dest(PUBLIC_JS));
-});
+// // Copy the React JS Library into the public/javascripts/ directory
+// gulp.task('copy-reactjs', function() {
+//   return gulp.src(NODE_MODULES + "react/dist/react.min.js")
+//     .pipe(gulp.dest(PUBLIC_JS)); 
+// });
+// // Copy the React JSXTransformer library into the public/javascripts/ directory
+// gulp.task('copy-jsxtransformer', function() {
+//   return gulp.src(NODE_MODULES + "react/dist/JSXTransformer.js")
+//     .pipe(gulp.dest(PUBLIC_JS));
+// });
 // Copy the GSAP library into the public/javascripts/ directory
 gulp.task('copy-gsap', function() {
   return gulp.src(NODE_MODULES + "gsap/src/minified/TweenMax.min.js")

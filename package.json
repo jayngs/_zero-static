@@ -1,6 +1,8 @@
 {
-  "name": "_mern-stack-boilerplate",
-  "version": "0.0.0",
+  "name": "zero-static",
+  "version": "0.0.1",
+  "description": "Boilerplate code for a barebones node.js / express setup",
+  "author" : "Jason Ng jason@jasonink.com",
   "private": true,
   "scripts": {
     "start": "node ./bin/www"

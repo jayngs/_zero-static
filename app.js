@@ -40,6 +40,9 @@ app.use(function(req, res, next) {
 
 // error handlers
 
+if (app.get('env') === 'development') {
+  app.locals.pretty = true;
+}
 // development error handler
 // will print stacktrace
 if (app.get('env') === 'development') {
