@@ -1,12 +1,13 @@
-#[Zero Static v0.0.1](http://jasonink.com)
-###A super simple implementation of Node.js and Express.js to build static websites
+#Zero Static v0.0.1
+###A super simple Node and Express setup.
 
-Zero Static is a boilerplate implementation so users can get up and running creating a static website.
+Zero Static is a boilerplate implementation so users can get up and running creating a static website. 
+Disclaimer: I'm a designer trying to learn more dev skills, specifically JS and MEAN stack dev, hence this project.
 Created and maintained by [Jason Ng](http://twitter.com/jayng).
 
-##BuiltWith
+##Modules
 - Node.js
-- Express.js via Express generator (http://expressjs.com/starter/generator.html)
+- Express.js via [Express generator](http://expressjs.com/starter/generator.html)
 - SASS
 - Bootstrap 3
 - Gulp
